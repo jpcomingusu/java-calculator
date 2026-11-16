@@ -17,6 +17,18 @@ function sub(){
     let c = Number(a) - Number(b);
  document.getElementById("ans").innerHTML=c;
 }    
+    function mult(){
+    let a = document.getElementById("fn").value
+  let b = document.getElementById("sn").value
+    let c = Number(a) * Number(b);
+ document.getElementById("ans").innerHTML=c;
+}    
+     function div(){
+    let a = document.getElementById("fn").value
+  let b = document.getElementById("sn").value
+    let c = Number(a) / Number(b);
+ document.getElementById("ans").innerHTML=c;
+}    
 </script>
   
 </head>
@@ -27,6 +39,8 @@ function sub(){
   Second number? <input id="sn"> <br>
 <button onclick="add()"> + </button>
   <button onclick="sub()"> - </button>
+ <button onclick="mult()"> · </button>
+   <button onclick="div()"> ÷ </button>
   
 </p>
 <p>
