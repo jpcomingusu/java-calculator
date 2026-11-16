@@ -8,8 +8,8 @@ function  let P = ((r/100/12) * PV) / (1-(1+(r/100/12))**-(n*12));(){
     let a = document.getElementById("fn").value
   let b = document.getElementById("sn").value
   let c = document.getElementById("tn").value
-    let d = Number(a) + Number(b) + Number(c);
- document.getElementById("ans").innerHTML=d;
+    
+ document.getElementById("ans").innerHTML=P;
 }
 
 
@@ -29,7 +29,7 @@ function  let P = ((r/100/12) * PV) / (1-(1+(r/100/12))**-(n*12));(){
   
 </p>
 <p>
-  Your answer is <span id="P"> ____________ </span></p>  
+  Your answer is <span id="ans"> ____________ </span></p>  
   
 
   
