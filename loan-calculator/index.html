@@ -4,7 +4,7 @@
   <title>JavaScript Calculator Functions</title>
 
   <script>
-   function calculateMonthlyPayment ( PV, n, r ) {
+   function calculateMonthlyPayment( PV, n, r ) {
     let P = ((r/100/12) * PV) / (1-(1+(r/100/12))**-(n*12));
     let a = document.getElementById("PV").value
   let b = document.getElementById("n").value
@@ -26,7 +26,7 @@
 <p> Present Value (the amount you wish to borrow) <input id="PV"> <br>
   Years <input id="n"> <br>
   % - Annual Interest Rate <input id="r"> <br>
-<button onclick="P = (())"> Calculate Monthly Payment </button>
+<button onclick="calculateMonthlyPayment( PV, n, r, )"> Calculate Monthly Payment </button>
 
   
 </p>
