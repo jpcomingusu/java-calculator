@@ -1,61 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Loan Calculator</title>
+  <title>JavaScript Calculator Functions</title>
+
   <script>
-    function add() {
-      let a = document.getElementById("fn").value;
-      let b = document.getElementById("sn").value;
-      let c = Number(a) + Number(b);
-      document.getElementById("ans").innerHTML = c;
-    }
+function add(){
+    let a = document.getElementById("fn").value
+  let b = document.getElementById("sn").value
+  let c = document.getElementById("tn").value
+    let d = Number(a) + Number(b) + Number(c);
+ document.getElementById("ans").innerHTML=d;
+}
 
-    function sub() {
-      let a = document.getElementById("fn").value;
-      let b = document.getElementById("sn").value;
-      let c = Number(a) - Number(b);
-      document.getElementById("ans").innerHTML = c;
-    }
 
-    function mult() {
-      let a = document.getElementById("fn").value;
-      let b = document.getElementById("sn").value;
-      let c = Number(a) * Number(b);
-      document.getElementById("ans").innerHTML = c;
-    }
-
-    function div() {
-      let a = document.getElementById("fn").value;
-      let b = document.getElementById("sn").value;
-      let c = Number(a) / Number(b);
-      document.getElementById("ans").innerHTML = c;
-    }
-
-    function exp() {
-      let a = document.getElementById("fn").value;
-      let b = document.getElementById("sn").value;
-      let c = Number(a) ** Number(b);
-      document.getElementById("ans").innerHTML = c;
-    }
-  </script>
+    
+</script>
+  
+  
 </head>
 <body>
-  <a href="../">Back to home</a>
-  <h3>Loan Calculator</h3>
+  <h3>Loan Payment Calculator</h3>
 
-  <p>First number? <input id="fn" type="number" /></p>
-  <p>Second number? <input id="sn" type="number" /></p>
+<p> Present Value (the amount you wish to borrow) <input id="fn"> <br>
+  Years <input id="sn"> <br>
+  % - Annual Interest Rate <input id="tn"> <br>
+<button onclick="add()"> Calculate Monthly Payment </button>
 
-  <div>
-    <button onclick="add()"> + </button>
-    <button onclick="sub()"> - </button>
-    <button onclick="mult()"> · </button>
-    <button onclick="div()"> ÷ </button>
-    <button onclick="exp()"> x² </button>
-  </div>
+  
+</p>
+<p>
+  Your answer is <span id="ans"> ____________ </span></p>  
+  
 
-  <p>Your answer is <span id="ans"> ____________ </span></p>
+  
 </body>
 </html>
