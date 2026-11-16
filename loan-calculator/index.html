@@ -4,10 +4,11 @@
   <title>JavaScript Calculator Functions</title>
 
   <script>
-let P = ((r/100/12) * PV) / (1-(1+(r/100/12))**-(n*12));(){
+    {
     let a = document.getElementById("pv").value
   let b = document.getElementById("ye").value
   let c = document.getElementById("ir").value
+     let P = ((ir/100/12) * pv) / (1-(1+(r/100/12))**-(ye*12));()
     
  document.getElementById("ans").innerHTML= "If you take a loan for $" + pv + " your payment will be $" + P.toFixed(2);
 }
@@ -24,7 +25,7 @@ let P = ((r/100/12) * PV) / (1-(1+(r/100/12))**-(n*12));(){
 <p> Present Value (the amount you wish to borrow) <input id="pv"> <br>
   Years <input id="ye"> <br>
   % - Annual Interest Rate <input id="ir"> <br>
-<button onclick="P()"> Calculate Monthly Payment </button>
+<button onclick="P"> Calculate Monthly Payment </button>
 
   
 </p>
