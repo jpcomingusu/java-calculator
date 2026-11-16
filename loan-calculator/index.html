@@ -5,12 +5,12 @@
 
   <script>
     {
-    let a = document.getElementById("pv").value
-  let b = document.getElementById("ye").value
-  let c = document.getElementById("ir").value
-     let P = ((ir/100/12) * pv) / (1-(1+(r/100/12))**-(ye*12));()
+    let a = document.getElementById("PV").value
+  let b = document.getElementById("n").value
+  let c = document.getElementById("r").value
+     let P = ((r/100/12) * PV) / (1-(1+(r/100/12))**-(n*12));()
     
- document.getElementById("ans").innerHTML= "If you take a loan for $" + pv + " your payment will be $" + P.toFixed(2);
+ document.getElementById("ans").innerHTML= "If you take a loan for $" + PV + " your payment will be $" + P.toFixed(2);
 }
 
 
@@ -22,10 +22,10 @@
 <body>
   <h3>Loan Payment Calculator</h3>
 
-<p> Present Value (the amount you wish to borrow) <input id="pv"> <br>
-  Years <input id="ye"> <br>
-  % - Annual Interest Rate <input id="ir"> <br>
-<button onclick="P"> Calculate Monthly Payment </button>
+<p> Present Value (the amount you wish to borrow) <input id="PV"> <br>
+  Years <input id="n"> <br>
+  % - Annual Interest Rate <input id="r"> <br>
+<button onclick="P = (())"> Calculate Monthly Payment </button>
 
   
 </p>
